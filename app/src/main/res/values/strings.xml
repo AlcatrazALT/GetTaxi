@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Get Taxi</string>
+    <string name="passenger">Passenger</string>
+    <string name="taxi_driver">Taxi Driver</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="sing_up_as_taxi_driver">Sing Up as Taxi Driver</string>
+    <string name="tap_to_sing_in"><u>Tap to Sing In</u></string>
+    <string name="sing_up_as_passenger">Sing Up as Passenger</string>
+</resources>

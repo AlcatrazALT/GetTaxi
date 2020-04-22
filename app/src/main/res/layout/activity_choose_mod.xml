@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ChooseModeActivity">
+
+    <Button
+        android:id="@+id/passenger_button"
+        android:onClick="goToPassengerSingIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_shape_yellow"
+        android:textSize="15sp"
+        android:text="@string/passenger"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/taxi_driver_button"
+        android:onClick="goToTaxiDriverSingIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_shape_black"
+        android:textColor="#FFD231"
+        android:textSize="15sp"
+        android:text="@string/taxi_driver"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

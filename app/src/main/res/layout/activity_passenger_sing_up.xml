@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TaxiDriverSingInActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:background="@drawable/rounded_shape_yellow"
+        android:padding="5dp"
+        android:id="@+id/sing_up_as_taxi_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sing_up_as_passenger"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/yellowColor"
+        app:counterOverflowTextColor="@color/yellowColor"
+        app:counterTextColor="@color/yellowColor"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/yellowColor"
+        app:passwordToggleTint="@color/yellowColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:backgroundTint="@color/yellowColor"
+            android:id="@+id/email_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/yellowColor"
+            android:textColorHighlight="@color/yellowColor"
+            android:textColorHint="@color/yellowColor"
+            android:textColorLink="@color/yellowColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/yellowColor"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:counterTextColor="@color/yellowColor"
+        app:errorEnabled="true"
+        app:passwordToggleTint="@color/yellowColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:backgroundTint="@color/yellowColor"
+            android:id="@+id/name_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textColor="@color/yellowColor"
+            android:textColorHighlight="@color/yellowColor"
+            android:textColorHint="@color/yellowColor"
+            android:textColorLink="@color/yellowColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/yellowColor"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/yellowColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:backgroundTint="@color/yellowColor"
+            android:id="@+id/password_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorLink="@color/colorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/yellowColor"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/yellowColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:backgroundTint="@color/yellowColor"
+            android:id="@+id/confirm_password_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textColorLink="@color/colorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/taxi_driver_sing_up_button"
+        android:background="@drawable/rounded_shape_yellow"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/sing_up"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tap_to_sing_in_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/tap_to_sing_in"
+        android:textColor="@color/yellowColor"
+        android:textSize="20sp"/>
+
+</LinearLayout>
