@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".TaxiDriverSingInActivity"
+    tools:context=".TaxiDriverSingUpActivity"
     android:background="@color/yellowColor">
 
     <TextView
+        android:id="@+id/sing_up_as_taxi_driver"
         android:background="@drawable/rounded_shape_black"
         android:padding="5dp"
-        android:id="@+id/sing_up_as_taxi_driver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sing_up_as_taxi_driver"

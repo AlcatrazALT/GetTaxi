@@ -7,7 +7,11 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm password</string>
     <string name="sing_up">Sing Up</string>
+    <string name="sing_in">Sing In</string>
     <string name="sing_up_as_taxi_driver">Sing Up as Taxi Driver</string>
+    <string name="sing_in_as_taxi_driver">Sing In as Taxi Driver</string>
     <string name="tap_to_sing_in"><u>Tap to Sing In</u></string>
+    <string name="tap_to_sing_up"><u>Tap to Sing Up</u></string>
     <string name="sing_up_as_passenger">Sing Up as Passenger</string>
+    <string name="sing_in_as_passenger">Sing In as Passenger</string>
 </resources>

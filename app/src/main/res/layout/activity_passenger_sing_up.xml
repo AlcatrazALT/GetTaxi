@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".TaxiDriverSingInActivity"
+    tools:context=".PassengerSingUpActivity"
     android:background="@color/colorPrimary">
 
     <TextView
+        android:id="@+id/sing_up_as_passenger"
         android:background="@drawable/rounded_shape_yellow"
         android:padding="5dp"
-        android:id="@+id/sing_up_as_taxi_driver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sing_up_as_passenger"
@@ -90,7 +90,10 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textColorLink="@color/colorPrimary" />
+            android:textColor="@color/yellowColor"
+            android:textColorHighlight="@color/yellowColor"
+            android:textColorHint="@color/yellowColor"
+            android:textColorLink="@color/yellowColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -104,18 +107,22 @@
         app:passwordToggleTint="@color/yellowColor">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:backgroundTint="@color/yellowColor"
             android:id="@+id/confirm_password_text_input_edit_text"
+            android:backgroundTint="@color/yellowColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirm_password"
             android:inputType="textPassword"
-            android:textColorLink="@color/colorPrimary" />
+            android:textColor="@color/yellowColor"
+            android:textColorHighlight="@color/yellowColor"
+            android:textColorHint="@color/yellowColor"
+            android:textColorLink="@color/yellowColor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/passenger_sing_up_button"
+        android:onClick="enterAsPassenger"
         android:layout_marginTop="20dp"
-        android:id="@+id/taxi_driver_sing_up_button"
         android:background="@drawable/rounded_shape_yellow"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
@@ -127,6 +134,7 @@
 
     <TextView
         android:id="@+id/tap_to_sing_in_text_view"
+        android:onClick="tapToSingIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class ChooseModeActivity extends AppCompatActivity {
 
     @Override
@@ -16,11 +18,11 @@ public class ChooseModeActivity extends AppCompatActivity {
 
     public void goToPassengerSingIn(View view) {
         startActivity(new Intent(ChooseModeActivity.this,
-                                    PassengerSingInActivity.class));
+                                    PassengerSingUpActivity.class));
     }
 
     public void goToTaxiDriverSingIn(View view) {
         startActivity(new Intent(ChooseModeActivity.this,
-                                    TaxiDriverSingInActivity.class));
+                                    TaxiDriverSingUpActivity.class));
     }
 }
